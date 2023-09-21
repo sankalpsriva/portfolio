@@ -1,3 +1,3 @@
 # portfolio
 
-Portfolio wesbites made with HTML, CS, JS
+Portfolio wesbite made with HTML, CS, JS
