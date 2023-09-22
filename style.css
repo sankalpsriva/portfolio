@@ -1,19 +1,31 @@
 body {
-  background: #ffd28f;
+  background: #fff5e0;
 }
 
 .navbar {
   display: flex;
-  justify-content: center;
+  justify-content: right;
+  font-size: 12px;
 }
 
 .navbarText {
   font-size: 200%;
-  padding: 10px;
-  font-family: "LeagueSpartan-Bold";
-  src: url("league-spartan\LeagueSpartan-Bold.otf");
+  padding-right: 10px;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-#about:hover {
-  color: white;
+.navbarText:hover {
+  color: #ff6969;
+  text-decoration: underline;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.name {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.text {
+  font-size: 15px;
 }
