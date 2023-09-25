@@ -56,6 +56,56 @@ body {
   display: inline-flex;
 }
 
+#container {
+  margin-top: 15px;
+}
+
+.information {
+  display: flex;
+  justify-content: center;
+  color: #141e46;
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  margin-top: 25px;
+  margin-bottom: 0px;
+}
+
+.info2 {
+  display: flex;
+  justify-content: center;
+  color: #141e46;
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+}
+
+.line1::after {
+  content: "\a";
+  white-space: pre;
+}
+
+.line2::before {
+  content: "\a";
+  white-space: pre;
+}
+
+.projects {
+  color: #141e46;
+  font-family: "Oswald", sans-serif;
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.projectsGrid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+  row-gap: 25px;
+}
+
 /* The typing effect */
 @keyframes typing {
   from {
