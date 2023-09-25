@@ -1,31 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+
 body {
-  background: #fff5e0;
+  color: #fff5e0;
 }
 
 .navbar {
   display: flex;
-  justify-content: right;
+  justify-content: space-evenly;
   font-size: 12px;
+  max-height: 200%;
 }
 
 .navbarText {
   font-size: 200%;
   padding-right: 10px;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "Oswald", sans-serif;
+  color: #141e46;
+  /* animation: spin 5s infinite linear; */
 }
 
 .navbarText:hover {
-  color: #ff6969;
-  text-decoration: underline;
   transition: 0.5s;
   cursor: pointer;
+  text-decoration: underline;
 }
 
 .name {
   display: flex;
-  justify-content: flex-start;
+  margin: auto;
 }
 
-.text {
-  font-size: 15px;
+#container {
+  display: flex;
+}
+
+#center {
+  margin: auto;
+}
+
+#p12 {
+  font-family: "Oswald", sans-serif;
+  color: #141e46;
+  font-size: 55px;
+
+  display: flex;
+  overflow: hidden;
+  border-right: 0.15em solid #141e46;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 2px;
+  animation: typing 2.5s steps(500, end), blink-caret 1s step-end infinite;
+}
+
+#p12 {
+  display: inline-flex;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #141e46;
+  }
 }
