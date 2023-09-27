@@ -1,31 +1,56 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
 
 body {
-  color: #fff5e0;
+  background-color: #fff5e0;
 }
 
 .navbar {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-end;
   font-size: 12px;
   max-height: 200%;
 }
 
 .navbarText {
-  font-size: 200%;
+  font-size: 150%;
   padding-right: 10px;
   font-family: "Oswald", sans-serif;
-  color: #141e46;
+  font-weight: bold;
+  color: #ff6969;
   transition-delay: 100ms;
   transition-duration: 1s;
+  backface-visibility: hidden;
+
+  background: linear-gradient(0deg, #ff6969, #ff6969);
+  background-size: 0% 0px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  transition: background-size 1000ms ease;
   /* animation: spin 5s infinite linear; */
 }
 
 .navbarText:hover {
   transition: 0.5s;
   cursor: pointer;
-  color: #141e46;
+  color: #ff6969;
+  transform: perspective(1px) translateZ(0);
   transform: scale(1.1);
+}
+
+#resume:hover {
+  background-size: 51.23px 2px;
+}
+
+#about:hover {
+  background-size: 38.03px 2px;
+}
+
+#contactButton:hover {
+  background-size: 50.67px 2px;
+}
+
+#skills:hover {
+  background-size: 35.34px 2px;
 }
 
 .name {
@@ -43,12 +68,12 @@ body {
 
 #p12 {
   font-family: "Oswald", sans-serif;
-  color: #141e46;
+  color: #ff6969;
   font-size: 55px;
-
+  font-weight: bold;
   display: flex;
   overflow: hidden;
-  border-right: 0.15em solid #141e46;
+  border-right: 0.15em solid #ff6969;
   white-space: nowrap;
   margin: 0 auto;
   letter-spacing: 2px;
@@ -67,27 +92,20 @@ body {
   display: flex;
   justify-content: center;
   text-align: center;
-  color: #141e46;
-  font-family: "Oswald", sans-serif;
+  color: #ff6969;
   white-space: normal;
-  font-size: 20px;
-  margin-top: 25px;
-  margin-bottom: 0px;
-}
-
-.info2 {
-  display: flex;
-  justify-content: center;
-  color: #141e46;
   font-family: "Oswald", sans-serif;
   font-size: 20px;
+  font-weight: bold;
+  margin-top: 25px;
+  margin-bottom: 15px;
 }
 
 .socials {
-  width: 50px;
-  height: 50px;
-  transition-delay: 100ms;
-  transition-duration: 0.1s;
+  width: 60px;
+  height: 60px;
+  transition-delay: 150ms;
+  transition-duration: 0.5s;
 }
 
 .socials:hover {
@@ -104,9 +122,10 @@ body {
 }
 
 .projects {
-  color: #141e46;
+  color: #ff6969;
   font-family: "Oswald", sans-serif;
   font-size: 60px;
+  font-weight: bold;
   display: flex;
   justify-content: center;
   margin-top: 50px;
@@ -118,6 +137,7 @@ body {
   grid-template-columns: 1fr;
   justify-items: center;
   align-items: center;
+  text-align: center;
   row-gap: 25px;
 }
 
@@ -138,6 +158,6 @@ body {
     border-color: transparent;
   }
   50% {
-    border-color: #141e46;
+    border-color: #ff6969;
   }
 }
