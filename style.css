@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
 
 body {
-  background-color: #fff5e0;
+  background-color: #feeecb;
 }
 
 .navbar {
@@ -131,6 +131,12 @@ body {
   margin-top: 50px;
 }
 
+.placeholder {
+  width: 1000px;
+  height: 650px;
+  border-radius: 6%;
+}
+
 .projectsGrid {
   display: grid;
   width: 100%;
@@ -139,6 +145,12 @@ body {
   align-items: center;
   text-align: center;
   row-gap: 25px;
+
+  background-size: contain;
+
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 /* The typing effect */
